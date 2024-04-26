@@ -1,0 +1,496 @@
+/* reseteo de valores predeterminados */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* selección de texto */
+*::selection {
+  background-color: #006241;
+  color: #fff;
+}
+
+/* ----------------------header-------------- */
+/* header version mobile */
+@media (min-width: 0) {
+  .header {
+    background-color: #006241;
+    color:#fff;
+    width: 100%;
+    padding: 0.75em 1.25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 2px 8px 26px 0px rgba(0, 0, 0, 0.75);
+  }
+  /* header parte izq*/
+  .header__logo {
+    width: 3em;
+    height: 3em;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+  /* header parte der*/
+  .fa-bars {
+    font-size: 2.5rem;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__container-login {
+    display: none;
+  }
+}
+/* header, modificaciones para version tablet */
+@media (min-width: 768px) {
+  .header__nav {
+    display: block;
+  }
+  .header__nav_link {
+    margin-left: 0.95em;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  /* header parte der*/
+  .header__list {
+    display: none;
+  }
+  .header__container-login {
+    display: block;
+  }
+  .fa-circle-user {
+    font-size: 2.5rem;
+  }
+  .header__login,
+  .header__nav_link {
+    text-decoration: none;
+    margin-left: 15px;
+  }
+}
+/* header, modificaciones para version laptop */
+@media (min-width: 1024px) {
+  .header__nav_link {
+    margin-left: 1.15em;
+    font-size: 1.15rem;
+  }
+}
+
+/*-----------------------main--------------------*/
+/* main version mobile */
+@media (min-width: 0) {
+  .main {
+    width: 90%;
+    margin: 125px auto 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  /* main parte izq */
+  .main__titulo {
+    font-size: 3.5rem;
+    line-height: 1.15em;
+    font-weight: bold;
+  }
+  .main__titulo-Starbucks {
+    color: #006241;
+  }
+  .main__parrafo {
+    margin-top: 1.25em;
+    line-height: 1.5em;
+    font-weight: bolder;
+  }
+  /* main parte der*/
+  .main__container-imagenLogo {
+    display: none;
+  }
+}
+/* main, modificaciones para version tablet */
+@media (min-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+  /* main parte izq*/
+  .main__container-texto {
+    width: 50%;
+  }
+  .main__titulo {
+    width: 90%;
+    font-size: 3.25rem;
+  }
+  .main__parrafo {
+    width: 90%;
+    font-size: 1rem;
+  }
+  /* main parte der*/
+  .main__container-imagenLogo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__imagenLogo {
+    width: 80%;
+    margin: 0 auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+}
+/* main, modificaciones para version laptop */
+@media (min-width: 1024px) {
+  /* main parte izq */
+  .main__titulo {
+    width: 80%;
+    font-size: 4.5rem;
+  }
+  /* main parte der*/
+  .main__parrafo {
+    font-size: 1.15rem;
+    line-height: 1.7em;
+  }
+  .main__imagenLogo {
+    width: 27em;
+  }
+}
+
+/*-------------------------gallery--------------*/
+/* gallery version mobile */
+@media (min-width: 0) {
+  .gallery {
+    background-color: #006241;
+    padding: 2em 0;
+  }
+  .gallery__container-imagen {
+    width: 90%;
+    padding: 0 0 1.5em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery__imagen {
+    margin-top: 1.5em;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+}
+/* gallery, modificaciones para version tablet y laptop */
+@media (min-width: 768px) {
+  .gallery__container-imagen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .gallery__imagen {
+    width: 30%;
+  }
+}
+
+/*---------------------contact-------------------*/
+/* contact version mobile */
+@media (min-width: 0) {
+  .contact {
+    background-color: #141414;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+  }
+  /* contact parte arriba*/
+  .contact__title {
+    color: #006241;
+    margin: 1em 0;
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  /* contact parte abajo*/
+  .contact__container-form {
+    background-color: #006241;
+    width: 90%;
+    padding: 0.75em;
+    margin: 0 auto 1.25em;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__label {
+    color: #fff;
+    font-size: 1.15rem;
+  }
+  .contact__imput,
+  .contact__textarea {
+    width: 100%;
+    padding: 0.5em 0.25em;
+    margin-bottom: 0.85em;
+    border-radius: 0.5em;
+    border: none;
+  }
+  .contact__imput::placeholder,
+  .contact__textarea::placeholder {
+    color: #006241;
+    font-weight: bold;
+  }
+  .contact__imput:focus,
+  .contact__textarea:focus {
+    background-color: #000;
+    color: #fff;
+  }
+  /* contact botón */
+  .contact__button {
+    background-color: inherit;
+    color: #fff;
+    width: max-content;
+    padding: 0.25em 3em;
+    margin-top: 0.5em;
+    font-size: 0.85rem;
+    border: 2px solid #fff;
+    border-radius: 0.5em;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .contact__button:hover {
+    background-color: yellow;
+    color: #fff;
+    border: 2px solid yellow;
+  }
+}
+/* contact, modificaciones para version tablet */
+@media (min-width: 768px) {
+  /* contact parte arriba*/
+  .contact__title {
+    font-size: 2.75rem;
+  }
+  /* contact parte abajo*/
+  .contact__container-form {
+    width: 60%;
+    padding: 1.2em;
+  }
+  .contact__label {
+    font-size: 1.25rem;
+  }
+  .contact__imput,
+  .contact__textarea {
+    margin-top: 0.5em;
+  }
+  /* contact botón */
+  .contact__button {
+    padding: 0.25em 5em;
+    font-size: 1rem;
+    border-radius: 0.75em;
+  }
+}
+/* contact, modificaciones para version laptop */
+@media (min-width: 1024px) {
+  /* contact parte abajo*/
+  .contact__container-form {
+    width: 40em;
+    padding: 1.75em;
+    margin: 0 auto 3em;
+  }
+  .contact__container-form-imput {
+    margin-bottom: 1em;
+  }
+  .contact__textarea {
+    height: 8em;
+  }
+}
+
+/*-------------------cards-----------------------*/
+/* cards version mobile */
+@media (min-width: 0) {
+  .cards {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .cards__container-cards {
+    background-color: #006241;
+    width: 80%;
+    margin: 1em auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .cards__imagen {
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+  .cards__container-text {
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+  }
+  .cards__titulo {
+    font-size: 1.5rem;
+  }
+  .article,
+  span {
+    color: yellow;
+  }
+  .cards__parrafo {
+    margin-top: 0.85em;
+    font-size: 0.85rem;
+  }
+  .cards__container-link {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards__link {
+    background-color: inherit;
+    color: #fff;
+    width: max-content;
+    padding: 0.5em 2em;
+    margin-bottom: 0.75em;
+    margin-right: 0.75em;
+    font-size: 0.75rem;
+    border-radius: 0.75em;
+    border: 0.15em solid #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .cards__link:hover {
+    background-color: yellow;
+    color: #fff;
+    border: 2px solid yellow;
+  }
+  .cards__descuento {
+    background-color: #d8f007;
+    color: #000;
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 1.35rem;
+    border-radius: 50%;
+    right: -25px;
+    top: -25px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+  }
+}
+/* cards, modificaciones para version tablet */
+@media (min-width: 768px) {
+  .cards {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .cards__container-cards {
+    width: 40%;
+  }
+  .cards__descuento {
+    width: 3em;
+    height: 3em;
+    font-size: 1.5rem;
+  }
+}
+/* cards, modificaciones para version laptop */
+@media (min-width: 1024px) {
+  .cards__titulo {
+    font-size: 1.75rem;
+  }
+  .cards__parrafo {
+    font-size: 1.05rem;
+  }
+  .cards__container-link {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/*-----------------footer------------------------*/
+/* footer version mobile */
+@media (min-width: 0) {
+  .footer {
+    background-color: #000;
+    padding: 2em 0;
+  }
+  .footer__container-usuario,
+  .footer__container-redes,
+  .footer__container-contacto {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer__link-usuario,
+  .footer__link-redes,
+  .footer__contacto {
+    color: #006241;
+    margin-bottom: 0.25em;
+    font-size: 1.05rem;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  .fa-facebook,
+  .fa-whatsapp,
+  .fa-twitter {
+    color: #006241;
+    margin: 1em 1em 1em 0;
+    font-size: 1.15rem;
+  }
+  .footer__contacto {
+    color: #09aa00;
+    font-weight: normal;
+  }
+}
+/* footer, modificaciones para version tablet */
+@media (min-width: 768px) {
+  .footer__container-footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__container-usuario,
+  .footer__container-redes,
+  .footer__container-contacto {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .footer__container-usuario {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__container-redes {
+    display: flex;
+    justify-content: center;
+  }
+  .fa-facebook,
+  .fa-whatsapp,
+  .fa-twitter {
+    font-size: 1.3rem;
+  }
+  .footer__container-contacto {
+    display: flex;
+    justify-content: end;
+  }
+  .footer__link-usuario,
+  .footer__link-redes,
+  .footer__contacto {
+    font-size: 1.2em;
+  }
+}
+/* footer, modificaciones para version laptop */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 5em 0;
+  }
+  .fa-facebook,
+  .fa-whatsapp,
+  .fa-twitter {
+    margin-left: 0.85em;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Josue Aquino" />
+    <meta name="description" content="Pagina web de Starbucks" />
+    <meta name="keywords" content="Starbucks, cafe, coffee, merienda" />
+    <link rel="icon" href="./starbucks/image/logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/c27b3b17e2.js"
+      crossorigin="anonymous
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Starbucks</title>
+  </head>
+  <body>
+    <!--header  -->
+    <header class="header">
+      <!--parte izq -->
+      <div class="header__container-logo">
+        <img class="header__logo" src="./starbucks/image/logo.png" alt="logo" />
+      </div>
+      <!--parte cen -->
+      <nav class="header__nav">
+        <a class="header__nav_link">INICIO</a>
+        <a class="header__nav_link">CAFE</a>
+        <a class="header__nav_link">SOBRE NOSOTROS</a>
+        <a class="header__nav_link">DELIVERY</a>
+      </nav>
+      <!--parte der mobile-->
+      <div class="header__list">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!--parte der a partir 768px-->
+      <div class="header__container-login">
+        <i class="fa-regular fa-circle-user"></i>
+      </div>
+    </header>
+    <!--main  -->
+    <main class="main">
+      <!--parte izq -->
+      <div class="main__container-texto">
+        <h1 class="main__titulo">
+          No solo es Cafe es
+          <span class="main__titulo-Starbucks">Starbucks</span>
+        </h1>
+        <p class="main__parrafo">
+          Cada día, acudimos a trabajar con la esperanza de conseguir dos cosas:
+          compartir el mejor café con nuestros amigos y contribuir a que el
+          mundo sea un poco mejor. Asi era cuando abrió la primera tienda
+          Starbucks en 1971, y asi continúa siendo hoy.
+        </p>
+      </div>
+      <!--parte der -->
+      <div class="main__container-imagenLogo">
+        <img
+          class="main__imagenLogo"
+          src="./starbucks/image/logo.png"
+          alt="logo"
+        />
+      </div>
+    </main>
+    <!--section gallery -->
+    <section class="gallery">
+      <div class="gallery__container-imagen">
+        <!--img izq -->
+        <img
+          class="gallery__imagen"
+          src="./starbucks/image/gallery-1.png"
+          alt="imagen 1 galería"
+        />
+        <!--img cen -->
+        <img
+          class="gallery__imagen"
+          src="./starbucks/image/gallery-2.png"
+          alt="imagen 2 galería"
+        />
+        <!--img der -->
+        <img
+          class="gallery__imagen"
+          src="./starbucks/image/gallery-3.png"
+          alt="imagen 3 galería"
+        />
+      </div>
+    </section>
+    <!--section contact -->
+    <section class="contact">
+      <!--contact parte arriba -->
+      <div class="contact__container-title">
+        <h2 class="contact__title">CONTACTANOS</h2>
+      </div>
+      <!--contact parte abajo -->
+      <form class="contact__container-form">
+        <!--parte arriba -->
+        <div class="contact__container-form-imput">
+          <label class="contact__label">correo electronico </label>
+          <input
+            class="contact__imput"
+            type="email"
+            placeholder="coloque su correo electrónico"
+          />
+        </div>
+        <!--parte centro -->
+        <div class="contact__container-form-imput">
+          <label class="contact__label">comentario</label>
+          <textarea
+            class="contact__textarea"
+            placeholder="coloque su comentario"
+          ></textarea>
+        </div>
+        <!--parte abajo -->
+        <div class="contact__container-button">
+          <button class="contact__button" type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+    <!--section cards -->
+    <section class="cards">
+      <!--cards 1 -->
+      <article class="cards__container-cards">
+        <div class="cards__descuento">5%</div>
+        <img
+          class="cards__imagen"
+          src="./starbucks/image/card-1.png"
+          alt="imagen cards 1"
+        />
+        <div class="cards__container-text">
+          <h2 class="cards__titulo">Aplicación de <span>Starbucks</span></h2>
+          <p class="cards__parrafo">
+            Ahorre tiempo con click y collect y recolecte sus estrellas. <br />
+            Hacer pedido nunca ha sido tan fácil.
+          </p>
+          <br />
+          <a class="cards__link" href="#">Pruebelo</a>
+        </div>
+      </article>
+      <!--cards 2 -->
+      <article class="cards__container-cards">
+        <div class="cards__descuento">10%</div>
+        <img
+          class="cards__imagen"
+          src="./starbucks/image/card-2.png"
+          alt="imagen cards 2"
+        />
+        <div class="cards__container-text">
+          <h2 class="cards__titulo">Starbucks <span>delivery</span></h2>
+          <p class="cards__parrafo">
+            Starbucks entrega su comida y bebida favorita en la puerta de su
+            casa.
+          </p>
+          <br />
+          <div class="cards__container-link">
+            <a class="cards__link" href="#">Entrega por UberEat</a>
+            <a class="cards__link" href="#">Entrega por PedidosYa</a>
+          </div>
+        </div>
+      </article>
+      <!--cards 3 -->
+      <article class="cards__container-cards">
+        <img
+          class="cards__imagen"
+          src="./starbucks/image/card-3.png"
+          alt="imagen cards 3"
+        />
+        <div class="cards__container-text">
+          <h2 class="cards__titulo">Novedades <span>Starbucks</span></h2>
+          <p class="cards__parrafo">
+            Manténgase informado de nuestras ultimas novedades y
+            actualizaciones.
+          </p>
+          <br />
+          <a class="cards__link" href="#">Más información</a>
+        </div>
+      </article>
+      <!--cards 4 -->
+      <article class="cards__container-cards">
+        <img
+          class="cards__imagen"
+          src="./starbucks/image/card-4.png"
+          alt="imagen cards 4"
+        />
+        <div class="cards__container-text">
+          <h2 class="cards__titulo">Historias de <span>Starbucks</span></h2>
+          <p class="cards__parrafo">
+            Descubra nuestra empresa y nuestra historia.
+          </p>
+          <br />
+          <a class="cards__link" href="#">Más información</a>
+        </div>
+      </article>
+    </section>
+    <!--footer  -->
+    <footer class="footer">
+      <div class="footer__container-footer">
+        <!--parte izq-->
+        <div class="footer__container-usuario">
+          <a class="footer__link-usuario" href="#">iniciar sesión</a>
+          <br />
+          <a class="footer__link-usuario" href="#">registrarse</a>
+        </div>
+        <!--parte cen-->
+        <div class="footer__container-redes">
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <!--parte der-->
+        <div class="footer__container-contacto">
+          <a class="footer__contacto" href="#">contactanos aquí</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
